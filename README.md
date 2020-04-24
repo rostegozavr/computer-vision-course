@@ -1,5 +1,7 @@
 # computer-vision-course
 
+Classification's accuracy on test was around 0.9.
+
 ![screenshot](https://github.com/rostegozavr/computer-vision-course/blob/master/images/screenshot.png)
 
 ## Datasets and trained nets
@@ -15,7 +17,8 @@ Also I use pictures from [MIO-TCD dataset](http://podoce.dinf.usherbrooke.ca/cha
 ## Training process
 1. Over 9000 images from MIO-TCD were resized to (96,64)
 2. Images were separated for training and test
-3. Trained 100 epochs with batch_size = 32
-4. Detecting objects in video, transport classification
+3. Augmentation with ImageDataGenerator
+4. Trained 100 epochs with batch_size = 32
+5. Detecting objects in video, transport classification
 
 ![process](https://github.com/rostegozavr/computer-vision-course/blob/master/images/charts.png)
