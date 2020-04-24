@@ -1,5 +1,7 @@
 # computer-vision-course
 
+![screenshot](https://github.com/rostegozavr/computer-vision-course/blob/master/images/screenshot.png)
+
 ## Datasets and trained nets
 
 Trained Yolo_v3 can be found [here](https://pjreddie.com/darknet/yolo/). 
