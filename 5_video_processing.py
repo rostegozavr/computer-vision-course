@@ -151,6 +151,8 @@ classes = {0: 'car', 1: 'truck', 2: 'bus'}
 optimizer = RMSprop(lr=0.0001, rho=0.9, epsilon=1e-08, decay=0.0)
 model.compile(loss= 'categorical_crossentropy', optimizer= optimizer, metrics=[ 'accuracy' ])
 #
+fourcc = cv2.VideoWriter_fourcc(*'MP4V')
+videoWriter = cv2.VideoWriter('result-video.mp4', fourcc, 12, (640, 480))
 
 while(True):
 	ret, frame = cap.read()
@@ -194,9 +196,11 @@ while(True):
 		cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
 
 	cv2.imshow('frame',frame)
+	videoWriter.write(frame)
 	if cv2.waitKey(1) & 0xFF == ord('q'):
 		break
 
+videoWriter.release()
 cap.release()
 cv2.destroyAllWindows()
 cv2.waitKey(1)
