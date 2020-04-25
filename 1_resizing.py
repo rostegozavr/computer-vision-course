@@ -1,3 +1,6 @@
+''' 
+Resizing
+'''
 import cv2
 import os
 import shutil
@@ -25,5 +28,3 @@ resize_images(folder, save_folder)
 folder = 'raw_images/truck'
 save_folder = 'resized_images/truck/'
 resize_images(folder, save_folder)
-
-

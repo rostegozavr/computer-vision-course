@@ -1,3 +1,6 @@
+''' 
+Video processing, object detecting with Yolo3 and class recognition with self-trained net
+'''
 import cv2
 import numpy
 from numpy import expand_dims

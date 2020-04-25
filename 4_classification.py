@@ -35,14 +35,3 @@ cv2.putText(img, className, (10,50), cv2.FONT_HERSHEY_SIMPLEX, 2, (0,200,0), 5, 
 cv2.imshow('Prediction',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-
-
-
-
-
-
-
-
-
-

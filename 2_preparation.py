@@ -1,3 +1,6 @@
+''' 
+Dataset preparation
+'''
 import cv2
 import os
 import numpy
@@ -59,15 +62,3 @@ random_seed = 0
 x_train, x_val, y_train, y_val = train_test_split(x_train, y_train, test_size = 0.1, random_state = random_seed)
 
 numpy.savez(dataset, x_train=x_train, x_test=x_test, y_train=y_train, y_test=y_test, x_val=x_val, y_val=y_val, test_image_names = test_image_names)
-
-
-
-
-
-
-
-
-
-
-
-

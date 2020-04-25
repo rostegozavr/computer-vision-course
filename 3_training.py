@@ -1,3 +1,6 @@
+''' 
+Training
+'''
 import numpy
 import matplotlib
 from keras.utils import to_categorical
@@ -64,32 +67,3 @@ model.fit_generator(datagen.flow(x_train, y_train, batch_size = 32),
 					callbacks = callbacks, verbose = verbose)
 
 model.save(modelFile)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
